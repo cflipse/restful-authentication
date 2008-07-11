@@ -56,7 +56,7 @@ module Identity
   RE_EMAIL_NAME      = '[\w\.%\+\-]+'                          # what you actually see in practice
   RE_EMAIL_N_RFC2822 = '0-9A-Z!#\$%\&\'\*\+_/=\?^\-`\{|\}~\.' # technically allowed by RFC-2822
   RE_DOMAIN_HEAD     = '(?:[A-Z0-9\-]+\.)+'
-  RE_DOMAIN_TLD      = '(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)'
+  RE_DOMAIN_TLD      = '(?:[A-Z]{2}|com|edu|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)'
   RE_EMAIL_OK        = /\A#{RE_EMAIL_NAME}@#{RE_DOMAIN_HEAD}#{RE_DOMAIN_TLD}\z/i
   RE_EMAIL_RFC2822   = /\A#{RE_EMAIL_N_RFC2822}@#{RE_DOMAIN_HEAD}#{RE_DOMAIN_TLD}\z/i
 
